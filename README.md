@@ -194,7 +194,8 @@ From April to September of 2005, we tracked historical monthly payment records. 
 
 -Yes`             `0.22
 
--  ![TARGET_IMBALANCE](TARGET_IMBALANCE.PNG)
+
+![TARGET_IMBALANCE](Images/TARGET_IMBALANCE.PNG)
 
 ###  **2-7- Numerical variables visualization** 
   
@@ -219,7 +220,7 @@ From April to September of 2005, we tracked historical monthly payment records. 
 7.    <span style="color: red; "> Default ratio is exceptionally high when credit limit is 550000 and 600000  </span>
 </div>
 
-![BALANCE_TARGET](BALANCE_TARGET.PNG)
+![BALANCE_TARGET](Images/BALANCE_TARGET.PNG)
 
 
 ###  *2-7-2- Visualization of "age" feature* 
@@ -234,7 +235,7 @@ From April to September of 2005, we tracked historical monthly payment records. 
 
 </div>
 
-![AGE_DEFAULT](AGE_DEFAULT.PNG)
+![AGE_DEFAULT](Images/AGE_DEFAULT.PNG)
 
 AGE_DEFAULT
 ###  *2-7-3- Relationship between age and other factors* 
@@ -244,7 +245,7 @@ AGE_DEFAULT
 2.   <span style="color: red; "> age between 70-79 has the maximum balance 
 3. <span style="color: red; "> at first the balance increases as age goes up, but then decrease, and in retirement it increase again   </span>
 
-![AGE_BILL](AGE_BILL.PNG)
+![AGE_BILL](Images/AGE_BILL.PNG)
 
    
 ### *2-7-4- Visualization of history of payments* 
@@ -287,9 +288,9 @@ AGE_DEFAULT
 - 6-	Generally, probability of default is increasing from full payment to eight months delay. 
 - 7-	Generally, we see that there is a sharp increase in the probability of default in second months delay, which shows month one and two are critical for default or not.
    
-![DEFUALT_SEPTEMBER](DEFUALT_SEPTEMBER.PNG)
+![DEFUALT_SEPTEMBER](Images/DEFUALT_SEPTEMBER.PNG)
 
-![DEFUALT_APR](DEFUALT_APR.PNG)
+![DEFUALT_APR](Images/DEFUALT_APR.PNG)
 
 
 ### *2-7-4-2- pairplot to have big picture*   
@@ -298,7 +299,7 @@ AGE_DEFAULT
 
 #### *2-7-5-1- Distribution of Monthly Bill Amount* 
 
-![BILL_AMNT_DESCRIBE](BILL_AMNT_DESCRIBE.PNG)
+![BILL_AMNT_DESCRIBE](Images/BILL_AMNT_DESCRIBE.PNG)
 
 ####  *2-7-5-3- pairplot of Bill Amount to have big picture and relationship between them* 
  
@@ -315,7 +316,7 @@ AGE_DEFAULT
 
 #### *2-7-6-1- Distribution of pervious payment Bill Amount* 
 
-![PAY_AMNT_DESCRIBE](PAY_AMNT_DESCRIBE.PNG)
+![PAY_AMNT_DESCRIBE](Images/PAY_AMNT_DESCRIBE.PNG)
 
 
 #### *2-7-6-3- pariplot of previous payment to have big picture and relationship between them* 
@@ -341,21 +342,21 @@ AGE_DEFAULT
 2.   <span style="color: red; "> around 25% of male has default, and around 35% of male has default
 3.    <span style="color: green; "> **Male has higher rate of default than Female**  </span>  
 
-![GENDER_TARGET](GENDER_TARGET.PNG)
+![GENDER_TARGET](Images/GENDER_TARGET.PNG)
 
 
 ###  *2-8-2- Visualization of "education" feature* 
 1. <span style="color: red; "> 45% of customers have university degree, after that 35% have graduate school.   </span>  
 2.   <span style="color: red; "> It seems people with high school has higher level of default
 
-![EDUCATION](EDUCATION.PNG)
+![EDUCATION](Images/EDUCATION.PNG)
  
 ### *2-8-3- Visualization of "Marriage" feature*  
 1. <span style="color: red; "> 53% of customers are single and 45% are married. </span>  
 2.   <span style="color: red; ">but the number of default for married and single are similar
 2.   <span style="color: red; "> **is seems Married people have higher level of default than single**
 
-![MARRIAGE](MARRIAGE.PNG)
+![MARRIAGE](Images/MARRIAGE.PNG)
 
 
 ### *2-8-4- Heatmap for categorical variables* 
@@ -366,7 +367,7 @@ AGE_DEFAULT
 2.   <span style="color: red; "> **single people (22%) has the lowest level default, followed by married (23%) and others (24%)**
 3.   <span style="color: red; "> **default of male (24%) is higher than female (21%)**
 
-![DEFAULT_SEX_EDUCATION_MARRIAGE](DEFAULT_SEX_EDUCATION_MARRIAGE.PNG)
+![DEFAULT_SEX_EDUCATION_MARRIAGE](Images/DEFAULT_SEX_EDUCATION_MARRIAGE.PNG)
 
 ### *2-8-6- Relationship between balance limit, education, gender, and marriage* 
 1. <span style="color: red; "> Maximum money in account belongs to people with graduate school degree   </span>  
@@ -376,11 +377,11 @@ AGE_DEFAULT
 5.  <span style="color: red; "> "Married" group has the maximum bill amount </span>  
 6. <span style="color: red; "> "Others" group has the minimum bill amount </span>
 
-![EDCUATION_BILL_AMNT](EDCUATION_BILL_AMNT.PNG)
+![EDCUATION_BILL_AMNT](Images/EDCUATION_BILL_AMNT.PNG)
 
-![GENDER_BILL_AMNT](GENDER_BILL_AMNT.PNG)
+![GENDER_BILL_AMNT](Images/GENDER_BILL_AMNT.PNG)
 
-![MARRIAGE_BILL_AMNT](MARRIAGE_BILL_AMNT.PNG)
+![MARRIAGE_BILL_AMNT](Images/MARRIAGE_BILL_AMNT.PNG)
   
 # **3- Engineering Features** 
 - 1- check the dataset info to be sure have all data or do not have extra 
@@ -446,7 +447,7 @@ Strategy:
 Evaluation: 
 
 
-![EVALUATION_BEFROE_TUNED](EVALUATION_BEFROE_TUNED.PNG)
+![EVALUATION_BEFROE_TUNED](Images/EVALUATION_BEFROE_TUNED.PNG)
 
 
 
@@ -523,9 +524,9 @@ Evaluation:
 #### <span style="color: red; ">  **7-2-Fit the models and make prediction**  </span> 
 #### <span style="color: red; ">  **7-3- Evaluation** </span> 
 
-![Classifiers_Comparison](Classifiers_Comparison.PNG)
+![Classifiers_Comparison](Images/Classifiers_Comparison.PNG)
 
-![EVALUATION_TUNED_MODELS](EVALUATION_TUNED_MODELS.PNG)
+![EVALUATION_TUNED_MODELS](Images/EVALUATION_TUNED_MODELS.PNG)
 
 
 *******************************************************
@@ -631,11 +632,11 @@ MLP Classification Report:
     weighted avg   0.71      0.70      0.70      9346
 *******************************************************
 #### <span style="color: red; ">  **7-4- Plotting ROC curve** </span> 
-![ROC_AUC](ROC_AUC.PNG)
+![ROC_AUC](Images/ROC_AUC.PNG)
 
 #### <span style="color: red; ">  **7-5-  Confusion Matrix** </span> 
-![confusion_matix1](Confusion_matrix1.PNG)
-![confusion matix2](Confusion_matrix2.PNG)
+![confusion_matix1](Images/Confusion_matrix1.PNG)
+![confusion matix2](Images/Confusion_matrix2.PNG)
 ### <span style="color: red; ">  **7-6-Best Model after tuning the hyperparameters** </span> 
 
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
@@ -681,14 +682,14 @@ MLP Classification Report:
 ##### <span style="color: red; ">  **7-7-1-Feature Importance with the second best model (XGBoost)** </span> 
 ##### <span style="color: red; ">  **7-7-2-Feature Importance with the best model (KNN)** </span> 
 
-![Feature importance KNN](Feature_importance_KNN.PNG)
-![Feature importance XGBoost](Feature_importance_XGBoost.PNG)
+![Feature importance KNN](Images/Feature_importance_KNN.PNG)
+![Feature importance XGBoost](Images/Feature_importance_XGBoost.PNG)
 
 ##### <span style="color: red; ">  **7-7-3-SHAP  for the second best model (XGBoost)** 
-![SHAP_XGBoost](SHAP_XGBoost.PNG)
+![SHAP_XGBoost](Images/SHAP_XGBoost.PNG)
                                                                                     
 ##### <span style="color: red; ">  **7-7-3-SHAP  for the best model (KNN)** </span> 
-![SHAP_KNN](SHAP_KNN.PNG)
+![SHAP_KNN](Images/SHAP_KNN.PNG)
 
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
 
