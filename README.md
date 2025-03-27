@@ -220,6 +220,8 @@ From April to September of 2005, we tracked historical monthly payment records. 
 7.    <span style="color: red; "> Default ratio is exceptionally high when credit limit is 550000 and 600000  </span>
 </div>
 
+![Limit_ball_distribution](Images/Limit_ball_distribution.PNG)
+
 ![BALANCE_TARGET](Images/BALANCE_TARGET.PNG)
 
 
@@ -232,8 +234,6 @@ From April to September of 2005, we tracked historical monthly payment records. 
 4. <span style="color: red; "> age 71-80 has the highest probability for default (more than 33%)   </span>
 5. <span style="color: red; "> age 21-30 has the second lowest probability for default   </span>
 #### 6. <span style="color: red; "> important point: probability of default 31-40 < 21-30 < 41-50 < 51-60< 61-70 < 71-79 </span>
-
-</div>
 
 ![AGE_DEFAULT](Images/AGE_DEFAULT.PNG)
 
@@ -264,7 +264,10 @@ AGE_DEFAULT
 1. <span style="color: red; "> for all months, Interquartile (25) is on time payment </span>  
 2. <span style="color: red; "> for all months, Interquartile (75) is 2 months delay in payment </span>  
 3. <span style="color: red; "> for all months, more than 5 months delay in payment is very low </span>
- 
+
+![payment_history_kde2](Images/payment_history_kde2.PNG)
+![payment_history_kde1](Images/payment_history_kde1.PNG)
+
 ### 2-7-4-1- Probability of default with attention to history of payments 
 ##### We focus here only on first and last months, as they are more important than others in affecting target variable 
 #### <span style="color: green; ">Points for history of payment on September (last month):
@@ -298,15 +301,17 @@ AGE_DEFAULT
 ### *2-7-5- Visualization of Monthly Bill Amount* 
 
 #### *2-7-5-1- Distribution of Monthly Bill Amount* 
+#### <span style="color: red; "> *2-7-5-2- Relationship between Bill Amonut and target variable* </span>  
 
-![BILL_AMNT_DESCRIBE](Images/BILL_AMNT_DESCRIBE.PNG)
 
+![BILL_AMNT_DESCRIBE](Images/BILL_AMNT_DESCRIBE.PNG)  
 ####  *2-7-5-3- pairplot of Bill Amount to have big picture and relationship between them* 
  
 1. <span style="color: red; "> main part of bill amount (Inter Quantile Range (IQR) for all six months is between 35k to 70k </span>  
 2.   <span style="color: red; ">as the number of previous months increases, the amount of 25%, 50% and 75% decreases 
 3.   <span style="color: red; ">From pariplot, it seems some of them have correlation
-   
+![pariplot_billamount](Images/pariplot_billamount.PNG)
+ 
 ###  *2-7-6- Visualization of Previous payment*  
  <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
  
@@ -315,6 +320,8 @@ AGE_DEFAULT
 3.   <span style="color: red; "> mean of previous payment for six months does not have clear trend, but mean of previous payment is among 4800 to 5700 
 
 #### *2-7-6-1- Distribution of pervious payment Bill Amount* 
+![previous_payment_KDE2](Images/previous_payment_KDE2.PNG)
+![previous_payment_KDE1](Images/previous_payment_KDE1.PNG)
 
 ![PAY_AMNT_DESCRIBE](Images/PAY_AMNT_DESCRIBE.PNG)
 
@@ -326,6 +333,9 @@ AGE_DEFAULT
  
 1. <span style="color: red; "> When Previous payment is low but Monthly Bill is high there is high possibility of default the payment. </span>  
 2. <span style="color: red; "> approximately the distribution of default or payment for all six months are the same, when paying attention to the both  Previous payment and bill amount </span>  
+
+![pay_and_bill2](Images/pay_and_bill2.PNG)
+![pay_and_bill1](Images/pay_and_bill1.PNG)
 
 
 ###  *2-7-7- Correlation between  numerical features* 
@@ -360,6 +370,8 @@ AGE_DEFAULT
 
 
 ### *2-8-4- Heatmap for categorical variables* 
+
+![Heatmap-categorical_variables](Images/Heatmap-categorical_variables.PNG)
 
 ### *2-8-5- Probability of default with attention to categorical variables*
  
