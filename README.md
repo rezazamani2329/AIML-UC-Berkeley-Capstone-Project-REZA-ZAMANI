@@ -389,11 +389,11 @@ AGE_DEFAULT
 - using VIF, we find that four features (`BILL_AMT_AUG`, `BILL_AMT_MAY`, `BILL_AMT_JUL`, `BILL_AMT_JUN` have high correlation, then remove them from dataset
   
 ### **2-8-Categorical variable Analysis**
-- Categorical features are: ‘EDUCATION`, `SEX`, and `MARRIAGE`
+- Categorical features are: `EDUCATION`, `SEX`, and `MARRIAGE`
 - For categorical data, we check distribution of each feature (with counplot), their effect on target variable with heatmap, and their relationship with default payment.  
 ###  *2-8-1- Visualization of "gender" feature* 
 1. <span style="color: red; "> 60% of sample is female and 40% is male   </span>  
-2.   <span style="color: red; "> around 24% of male has default, and around 21% of male has default
+2.   <span style="color: red; "> around 24% of male has default, and around 21% of female has default
 3.    <span style="color: green; "> Male has higher rate of default than Female  </span>  
 
 ![GENDER_TARGET](Images/GENDER_TARGET.PNG)
@@ -793,8 +793,8 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 - **`    `8`                      `8 moths delay`                            `58%**                             
 - **`    `9`                      `more than 8 moths delay`                  `13%**                              
 
-- #### **Average risk of default is 48%** in PAY_SEP feature 
-- **we can categorize them with attention to the mean risk, form low risk to very high risk** 
+#### **Average risk of default is 48%** in PAY_SEP feature 
+#### **we can categorize them with attention to the mean risk, form low risk to very high risk** 
 
 - <span style="color: GREEN; ">**`           `Condition`              `Risk level (from low to very high)`            `Risk level (from 1 to 6)**
 - **`                `paid in full`                        `Low Risk`                                    `1**
@@ -809,7 +809,7 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 - **`                `8 moths delay`                     `Upper Middle Risk`                             `4**
 - **`                `more than 8 moths delay`            `Low Risk`                                      `1**
 
-- **with attention to level of risk we can see each level of risk with attention to the conditions:**
+#### **with attention to level of risk we can see each level of risk with attention to the conditions:**
 
 #### `Low risk` of default:   `paid in full`  , `paid minimum only`, `more than 8 moths delay`
 #### `Lower Middle Risk` of default: `one month delay`
