@@ -1021,7 +1021,7 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 ### 5- <span style="color: red; "> **Machine learning models before hyperparameter tuning** </span> 
 ### 6- <span style="color: red; "> **Models with hyperparameter tuning (best parameters)** </span>
 ### 7- <span style="color: red; "> **Comparison of tuned models and best model** </span> 
-- Using confusion matrix, ROC curve, recall, precision and f1, we find that among models with best parameters, **XGBoost** classifier is the best and **KNN** is the second best model. 
+- Using confusion matrix, ROC curve, recall, precision, f1 and accuracy, we find that among models with best parameters, **XGBoost** classifier is the best and **KNN** is the second best model. 
   
 - From SHAP and feature importance we find that three factors are very important and have the highest impact on risk of default. They are: 
 - LIM_SEP
