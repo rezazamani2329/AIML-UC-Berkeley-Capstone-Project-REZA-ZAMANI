@@ -19,58 +19,65 @@
 
 ### 3- Process of the project
 1- Business Understanding (Problem statement, purposes, questions, methodology, steps, phases of project)  </span>
-#### <span style="color: Red; "> 2- Data understanding </span> 
-#### <span style="color: Red; "> 3- Feature Engineering </span> 
-####  <span style="color: Red; "> 4- Train/Test split and handling imbalanced dataset <span style="color: blue; ">  </span> 
-####  <span style="color: Red; ">5- Machine learning models and their evaluation before hyperparameter tuning  </span> 
-####  <span style="color: Red; ">6- Machine learning models after hyperparameter tuning  </span>
-####  <span style="color: Red; ">7- Comparison of Models performance, evaluation, best model, and SHAP</span>
-####  <span style="color: Red; ">8- Conclusion</span>
+
+ <span style="color: Red; "> 2- Data understanding </span> 
+ 
+ <span style="color: Red; "> 3- Feature Engineering </span> 
+ 
+  <span style="color: Red; "> 4- Train/Test split and handling imbalanced dataset <span style="color: blue; ">  </span> 
+  
+  <span style="color: Red; ">5- Machine learning models and their evaluation before hyperparameter tuning  </span>
+  
+  <span style="color: Red; ">6- Machine learning models after hyperparameter tuning  </span>
+  
+  <span style="color: Red; ">7- Comparison of Models performance, evaluation, best model, and SHAP</span>
+  
+  <span style="color: Red; ">8- Conclusion</span>
 
 ## **4- Stages of Project** 
 
 #### <span style="color: blue; "> **1-First Phase:** </span> 
 
 <span style="color: blue; "> **Data Understanding** </span> 
-- **General checking: missing data, duplicate, incorrect data, ...**
--  **Target Variable Visualization**
-- **Numerical Features Visualization**
-- **Categorical Features Visualization**
-- **Relationship between features, and their relationship with target**
-- **Correlation problem**
+- General checking: missing data, duplicate, incorrect data, ...
+- Target Variable Visualization
+- Numerical Features Visualization
+- Categorical Features Visualization
+- Relationship between features, and their relationship with target
+- Correlation problem
 
 <span style="color: blue; "> **Feature Engineering** </span> 
 
-<span style="color: blue; "> **Using algorithms, before hyperparameter tuning** </span> 
+- <span style="color: blue; "> Using algorithms, before hyperparameter tuning </span> 
 
-<span style="color: blue; "> **Choosing the best algorithm with different criteria** </span> 
+- <span style="color: blue; "> Choosing the best algorithm with different criteria </span> 
 
 ####  <span style="color: green; "> **2-Second Phase:** </span> 
 
-- <span style="color: green; "> **Tuning the hyperparameters** </span> 
+- <span style="color: green; "> Tuning the hyperparameters </span> 
 
-- <span style="color: green; "> **Choosing best parameters for each algorithm** </span> 
+- <span style="color: green; "> Choosing best parameters for each algorithm </span> 
 
-- <span style="color: green; "> **Evaluating the algorithms with different criteria (accuracy, time, f1, precision, recall, ROC_AUC)** </span> 
+- <span style="color: green; "> Evaluating the algorithms with different criteria (accuracy, time, f1, precision, recall, ROC_AUC </span> 
 
-- <span style="color: green; "> **Choosing the best algorithm with different criteria** </span> 
+- <span style="color: green; "> Choosing the best algorithm with different criteria </span> 
 
 #### <span style="color: orange; "> **3-Third Phase:** </span> 
 
-- <span style="color: orange; "> **SHAP, and deployment** </span> 
+- <span style="color: orange; "> SHAP, and deployment </span> 
 
-- <span style="color: orange; "> **Policy recommendation** </span> 
+- <span style="color: orange; "> Policy recommendation </span> 
 
 
 # 1- Business Understanding 
 
 ###   **1-1-Main Research Question**  
--  **Can Machine Learning models accurately predict whether credit card customers will default or not?**
+-  Can Machine Learning models accurately predict whether credit card customers will default or not
 
 ###  **1-2-Other Research Questions**   
-- **What are the main factors affecting the probability of default by customers?**
+- What are the main factors affecting the probability of default by customers
 
-- **what are the relative importance of factors affecting the probability of default by customers?**
+- what are the relative importance of factors affecting the probability of default by customers
 
 ###  **1-3-Problem Statement** 
 Customers and also managers of financial institutions- a credit card financial institutions - want to have a better understanding of the factors that impact credit card payment default and get a solution in place that can predict with high accuracy whether customers will default on payments.
@@ -80,14 +87,14 @@ To solve this problem we use a dataset that contains credit card payment informa
 From the standpoint of risk management, the predictive accuracy of the predicted chance of default will be more valuable than the binary outcome of classification - credible or not credible clients. We must determine which clients will fall behind on their credit card payments. Financial dangers are demonstrating a trend regarding commercial bank credit risk as the financial industry has improved dramatically. As a result, one of the most serious risks to commercial banks is the risk prediction of credit clients. The current project is being created in order to analyses and predict the above-mentioned database. This research aims to identify credit card consumers who are more likely to default in the next month.
 
 ###  **1-4-Main Goal** 
-- **Using AIML models, predict whether credit card customers will default or not**
+- Using AIML models, predict whether credit card customers will default or not
 
 ###  **1-5-Other Goals** 
-- **Determine main features have the highest impact on credit card default**
+- Determine main features have the highest impact on credit card default
 
-- **Understand the relationship between features together**
+- Understand the relationship between features together
 
-- **Understand the mechanism through which features affect default payment as target variable**
+- Understand the mechanism through which features affect default payment as target variable
 
 ###  **1-6- Methodology** 
 - **Classification**
@@ -211,13 +218,13 @@ From April to September of 2005, we tracked historical monthly payment records. 
 ###  *2-7-1- Visualization of "LIMIT_BAL" feature (balance limit)* 
  
 #### <span style="color: blue; "> Points for "LIMIT_BAL" feature and its effect on target: </span> 
-1. <span style="color: red; ">  as balance limit increases, the probability of default decreases   </span>  
-2.   <span style="color: red; "> the average of balance limit for people who has default is around half of people do not default.
-3.    <span style="color: red; "> Most of people have balance limit smaller than $300k  </span>
-4.    <span style="color: red; "> Maximum number of balance limit is below 100k </span>
+1. <span style="color: red; ">  As balance limit increases, the probability of default decreases   </span>  
+2.   <span style="color: red; "> The average of balance limit for people who has default is around half of people do not have default.
+3.    <span style="color: red; "> Most of people have balance limit smaller than $300k dollars  </span>
+4.    <span style="color: red; "> Maximum number of balance limit is below 100k dollar</span>
 5.    <span style="color: red; "> Very few balance limit are above 500k </span>
 6.    <span style="color: red; ">  When balance limit is less than equal to 50k or smaller default ratio is high  </span>
-7.    <span style="color: red; "> Default ratio is exceptionally high when balance limit is 550000 and 600000  </span>
+7.    <span style="color: red; "> Default ratio is exceptionally high when balance limit is 550000 and 600000 dollars </span>
 </div>
 
 ![Limit_ball_distribution](Images/Limit_ball_distribution.PNG)
@@ -233,11 +240,11 @@ From April to September of 2005, we tracked historical monthly payment records. 
 ###  *2-7-2- Visualization of "age" feature* 
  
 #### <span style="color: blue; "> Points for "age" feature and its effect on target: </span> 
-1.  <span style="color: red; "> maximum default in male is in the age 29  </span>
-2. <span style="color: red; "> maximum default in female is in the age 27  </span>
-3. <span style="color: red; "> age 31-40 has the lowest probability for default (20%)   </span>
-4. <span style="color: red; "> age 71-80 has the highest probability for default (more than 33%)   </span>
-5. <span style="color: red; "> age 21-30 has the second lowest probability for default   </span>
+1.  <span style="color: red; "> Maximum default for male is in the age 29  </span>
+2. <span style="color: red; "> maximum default for female is in the age 27  </span>
+3. <span style="color: red; "> Age group 31-40 has the lowest probability for default (20%)   </span>
+4. <span style="color: red; "> Age group 71-80 has the highest probability for default (more than 33%)   </span>
+5. <span style="color: red; "> Age group 21-30 has the second lowest probability for default   </span>
 #### 6. <span style="color: red; "> important point: probability of default 31-40 < 21-30 < 41-50 < 51-60< 61-70 < 71-79 </span>
 
 ![AGE_DEFAULT](Images/AGE_DEFAULT.PNG)
@@ -258,17 +265,17 @@ AGE_DEFAULT
  
 #### <span style="color: blue; "> Points for "history of payment" feature and its effect on target: </span> 
 1. <span style="color: red; "> **Remarkable ratio** of people has**paid the minimum** only </span>  
-2.   <span style="color: red; ">customers who pay only the minimum have a higher risk of default
-3. <span style="color: red; "> customers ratio with **2 month default**  is high   </span>  
-4. <span style="color: red; "> customers ratio with **more than eight months default**  is high  </span>  
-5. <span style="color: red; "> all months have approximately similar KDE density function ratio with **more than eight months default**   </span>  
+2.   <span style="color: red; ">Someone who pays only the minimum have a higher risk of default
+3. <span style="color: red; "> Customers ratio with **2 month default**  is high   </span>  
+4. <span style="color: red; "> Customers ratio with **more than eight months default**  is high  </span>  
+5. <span style="color: red; "> All months have approximately similar KDE density function ratio with **more than eight months default**   </span>  
 
  <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
  
 #### <span style="color: blue; "> Points for distribution of "history of payment" feature </span> 
-1. <span style="color: red; "> for all months, Interquartile (25) is on time payment </span>  
-2. <span style="color: red; "> for all months, Interquartile (75) is 2 months delay in payment </span>  
-3. <span style="color: red; "> for all months, more than 5 months delay in payment is very low </span>
+1. <span style="color: red; "> For all six months, Interquartile (25) is on time payment </span>  
+2. <span style="color: red; "> For all six months, Interquartile (75) is 2 months delay in payment </span>  
+3. <span style="color: red; "> For all six months, more than 5 months delay in payment is very low </span>
 
 ![payment_history_kde2](Images/payment_history_kde2.PNG)
 ![payment_history_kde1](Images/payment_history_kde1.PNG)
@@ -278,7 +285,7 @@ AGE_DEFAULT
 #### <span style="color: green; ">Points for history of payment on September (last month):
 
 - 1-	Default probability with full payment is 16%
-- 2-	Default probability with having only part of payment is 13%
+- 2-	Default probability for people who pay only part of debpt is 13%
 - 3-	Default probability with one month delay is 33%
 - 4-	Default probability with two months delay is 69%, which shows there is a sharp increase from one month delay to two months delay 
 - 5-	Default probability with three months delay is 75% and in maximum of default between all conditions 
@@ -387,7 +394,7 @@ AGE_DEFAULT
 ###  *2-8-1- Visualization of "gender" feature* 
 1. <span style="color: red; "> 60% of sample is female and 40% is male   </span>  
 2.   <span style="color: red; "> around 24% of male has default, and around 21% of male has default
-3.    <span style="color: green; "> **Male has higher rate of default than Female**  </span>  
+3.    <span style="color: green; "> Male has higher rate of default than Female  </span>  
 
 ![GENDER_TARGET](Images/GENDER_TARGET.PNG)
 
@@ -400,7 +407,7 @@ AGE_DEFAULT
  
 ### *2-8-3- Visualization of "Marriage" feature*  
 1. <span style="color: red; "> 53% of customers are single and 45% are married. </span>  
-2.   <span style="color: red; "> **it seems Married people have higher level of default than single**
+2.   <span style="color: red; "> it seems Married people have higher level of default than single
 
 ![MARRIAGE](Images/MARRIAGE.PNG)
 
@@ -411,9 +418,9 @@ AGE_DEFAULT
 
 ### *2-8-5- Probability of default with attention to categorical variables*
  
-1. <span style="color: red; "> **people with high school degree have the highest default (25%), followed by university degree (23%), and Graduate School (19%) and others (7%)** </span>  
-2.   <span style="color: red; "> **single people (22%) has the lowest level default, followed by married (23%) and others (24%)**
-3.   <span style="color: red; "> **default of male (24%) is higher than female (21%)**
+1. <span style="color: red; "> people with high school degree have the highest default (25%), followed by university degree (23%), and Graduate School (19%) and others (7%)  </span>  
+2.   <span style="color: red; "> single people (22%) has the lowest level default, followed by married (23%) and others (24%)
+3.   <span style="color: red; "> default of male (24%) is higher than female (21%)
 
 ![DEFAULT_SEX_EDUCATION_MARRIAGE](Images/DEFAULT_SEX_EDUCATION_MARRIAGE.PNG)
 
@@ -568,9 +575,9 @@ Evaluation:
 
 # <span style="color: red; ">  **7- Comparison of tuned models (with best parameters)** </span> 
 
-#### <span style="color: red; ">  **7-1- Pipeline for best parameters for each model**  </span> 
-#### <span style="color: red; ">  **7-2-Fit the models and make prediction**  </span> 
-#### <span style="color: red; ">  **7-3- Evaluation** </span> 
+- At first we define pipeline to find best parameters for each model  </span> 
+- Then fit the models and make prediction
+- After that we have evaluation with different criteria. Here is the results  </span> 
 
 ![Classifiers_Comparison](Images/Classifiers_Comparison.PNG)
 
@@ -679,13 +686,14 @@ MLP Classification Report:
     macro avg      0.71      0.70      0.70      9346
     weighted avg   0.71      0.70      0.70      9346
 *******************************************************
-#### <span style="color: red; ">  **7-4- Plotting ROC curve** </span> 
+- We also plotted ROC curve** </span> 
 ![ROC_AUC](Images/ROC_AUC.PNG)
 
-#### <span style="color: red; ">  **7-5-  Confusion Matrix** </span> 
+- Here is Confusion Matrix** </span> 
 ![confusion_matix1](Images/Confusion_matrix1.PNG)
 ![confusion matix2](Images/Confusion_matrix2.PNG)
-### <span style="color: red; ">  **7-6-Best Model after tuning the hyperparameters** </span> 
+
+### <span style="color: red; ">  **-Best Model after tuning the hyperparameters** </span> 
 
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
     
@@ -764,7 +772,9 @@ MLP Classification Report:
 - 10- **EDUCATION**: This feature has low impact on risk of default (target variable). Among different groups, university degree and graduate school have higher ranking than others. 
 </div>
 
-### <span style="color: red; ">  **7-8-2- Interpretation of results from SHAP and feature importance, with attention to data understanding** </span> 
+## <span style="color: red; ">  **7-8-2- Interpretation of results**
+
+For interpretation, we use SHAP, feature importance, and data understanding </span> 
 
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
 
@@ -786,18 +796,18 @@ MLP Classification Report:
 - #### **Average risk of default is 48%** in PAY_SEP feature 
 - **we can categorize them with attention to the mean risk, form low risk to very high risk** 
 
-- <span style="color: GREEN; ">**`               `Condition`                  `Risk level (from low to very high)`                `Risk level (from 1 to 6)**
-- **`                `paid in full`                        `Low Risk`                                          `1**
-- **`                `paid minimum only`                 `Low Risk`                                            `1**
-- **`                `1 moth delay`                      `Lower Middle Risk`                                   `2**
-- **`                `2 moths delay`                     `High Risk`                                           `5**
-- **`                `3 moths delay`                     `Very High Risk`                                      `6**
-- **`                `4 moths delay`                     `High Risk`                                           `5**
-- **`                `5moths delay`                      `Upper Middle Risk`                                   `4**
-- **`                `6 moths delay`                     `Upper Middle Risk`                                   `4**
-- **`                `7 moths delay`                     `Very High Risk`                                      `6**
-- **`                `8 moths delay`                     `Upper Middle Risk`                                   `4**
-- **`                `more than 8 moths delay`            `Low Risk`                                           `1**
+- <span style="color: GREEN; ">**`           `Condition`              `Risk level (from low to very high)`            `Risk level (from 1 to 6)**
+- **`                `paid in full`                        `Low Risk`                                    `1**
+- **`                `paid minimum only`                 `Low Risk`                                      `1**
+- **`                `1 moth delay`                      `Lower Middle Risk`                             `2**
+- **`                `2 moths delay`                     `High Risk`                                     `5**
+- **`                `3 moths delay`                     `Very High Risk`                                `6**
+- **`                `4 moths delay`                     `High Risk`                                     `5**
+- **`                `5moths delay`                      `Upper Middle Risk`                             `4**
+- **`                `6 moths delay`                     `Upper Middle Risk`                             `4**
+- **`                `7 moths delay`                     `Very High Risk`                                `6**
+- **`                `8 moths delay`                     `Upper Middle Risk`                             `4**
+- **`                `more than 8 moths delay`            `Low Risk`                                      `1**
 
 - **with attention to level of risk we can see each level of risk with attention to the conditions:**
 
@@ -1004,76 +1014,29 @@ MLP Classification Report:
 
 # <span style="color: red; ">  **8- Conclusion** </span> 
 ## <span style="color: red; "> **8- 1- Steps of the project (what we have done?)** </span>
-
-<div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
   
 ### 1- <span style="color: red; "> **Business understanding** </span>
-    Purpose of this project is to predict the next behaver of customer that he or she will default or pay 
-- 1-main question
-- 2-other questions 
-- 3-problem statement 
-- 4-main goal
-- 5- other goals
-- 6- methodology 
-- 7- steps of project
-- 8- methods 
+- we defined questions, problem statement, goals, methodology and methods 
 
 #### 2- <span style="color: red; "> **Data understanding** </span> 
-     Data understanding: In around 30k datasets (24 feature and 1 target),
-    Target variable represents the default of payment.
-- 1-load dataset 
-- 2-undestanidng features 
-- 3-general info, missing, duplicate 
-- 4-checking correctness of variables and inside them 
-- 5- data wrangling 
-- 6-target variable analysis 
-- 7- numerical variable visualization: visualization and correlation control  
-- 8- categorical variable visualization 
-
+ we check general info, missing, duplicate, then check the correctness of variables and data. After that we had data wrangling, then analyze the target variable, numerical and categorical variables 
 
 ### 3- <span style="color: red; "> **Feature Engineering** </span>
-  - 1- check the dataset info to be sure have all data or do not have extra 
-
-- 2- Remove Highly Correlated feature
-
-- 3- Split the data into features and target
-
-- 4- Identify categorical and numerical columns
-
-- 5- Encode the target variable
-
-- 6- Onehotencoder fo catgorical and standardscaler for numerical variables 
+ we split the data into features and target, identify categorical and numerical columns, encode the target variable and apply Onehotencoder to catgorical and standardscaler to numerical variables 
 
 ### 4- <span style="color: red; "> **train/test split and handling imbalanced dataset** </span>
-
-- 1-train/test split
-- 2-SMOTE method for imbalanced dataset
+At first we have train/test split, then apply SMOTE method for imbalanced dataset
 
 ### 5- <span style="color: red; "> **Machine learning models before hyperparameter tuning** </span> 
-- 1- decision trees 
-- 2- KNN
-- 3- SVM
-- 4- Logistic Regression 
-- 5- Random Forest 
-- 6- AdaBoost 
-- 7- XGBoost 
-- 8- MLP (multi layer perceptron)
+we have 8 models: decision trees, KNN, SVM, Logistic Regression, Random Forest, AdaBoost, XGBoost and MLP (multi layer perceptron)
 
-- we use not only test and train score, but also recall, precision, f1, classification report and confusion matrix.
-  
-- Best model before hyperparameter tuning
-        
-- 1- general finding 
-- 2- comparison of model in test and train score
-- 3- comparison by f1, recall and precision 
-- 4- Average time fit 
-- 5- choosing the best model and second and third models
-  
-   **best model is Random Forest (best)**, followed by XGBoost, and Decision Trees 
+We evaluate models with different criteria (accuracy, recall, precision, f1, and time) and find that best model is Random Forest ,followed by XGBoost, and Decision Trees. 
+
+We find that f1, recall, precision, and roc_auc are needed to be improved. 
 
 ### 6- <span style="color: red; "> **Models with hyperparameter tuning (best parameters)** </span>
-    We define different parameters for our classifiers (8 classifiers) 
-    and using gridsearch we find the best parameters for each classifier:
+We define different parameters for our classifiers (8 classifiers) 
+and using gridsearch we find the best parameters for each following classifiers:
     
 - 1- decision trees 
 - 2- KNN
@@ -1085,33 +1048,11 @@ MLP Classification Report:
 - 8- MLP
   
 ### 7- <span style="color: red; "> **Comparison of tuned models** </span> 
-     Again fit model with this classifiers with their best parameters and in    last step of modeling try to evaluate their performance.
-    
-- 1- pipeline for best parameters for each model
-- 2- Fit the models and make prediction 
-- 3- Accuracy and Classification report 
-- 4- Plotting ROC curve 
-- 5- Confusion Matrix
-- 6- SHAP and feature importance 
-  
- **Best model after tuning the hyperparameters** </span> 
-     
-- 1- General findings 
-- 2- Best accuracy score
-- 3- Best f1 score 
-- 4- Best Recall score 
-- 5- Best Precision score 
-- 6- Best ROC-AUC
-- 7- Choosing the best models
+we define pipeline for best parameters for each model, fit the models and make prediction, extract Accuracy and Classification report, plot ROC curve, find Confusion Matrix and finally using SHAP and feature importance we find most important factors affecting the target variable. 
 
-- Using confusion matrix, ROC curve, recall, precision and f1
-- We find that among models with best parameters, **XGBoost** regression is the best.
+- Using confusion matrix, ROC curve, recall, precision and f1, we find that among models with best parameters, **XGBoost** classifier is the best and **KNN** is the second best model. 
   
-- **XGBoost** followed by **KNN** as the best models 
-  
-
- **Feature importance and SHAP** </span>  
- Most important features: 
+- From SHAP and feature importance we find that three factors are very important and have the highest impact on risk of default. They are: 
 - LIM_SEP
 - BILL_AMT
 - AGE
