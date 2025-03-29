@@ -15,7 +15,7 @@
 
  Here is the answer of AIML for your suggestion, please follow it. You will find some good ideas
 
- This code has user-friendly structure. It is classification issue in machine learning, as capstone project for `UC Berkeley Professional Certificate in AIML`, from `Berkeley Engineering` and `Berkeley HAAS`, and written by `Reza Zamani`
+ This code has user-friendly structure. It is classification issue in machine learning, as capstone project for `UC Berkeley Professional Certificate in AIML`, from `Berkeley Engineering` and `Berkeley HAAS`, suppervised by `Viviana Márquez` and written by `Reza Zamani`
 
 ### 3- Process of the project
 1- Business Understanding (Problem statement, purposes, questions, methodology, steps, phases of project)  </span>
