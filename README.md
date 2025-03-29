@@ -1014,42 +1014,13 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 
 # <span style="color: red; ">  **8- Conclusion** </span> 
 ## <span style="color: red; "> **8- 1- Steps of the project (what we have done?)** </span>
-  
 ### 1- <span style="color: red; "> **Business understanding** </span>
-- we defined questions, problem statement, goals, methodology and methods 
-
 #### 2- <span style="color: red; "> **Data understanding** </span> 
- we check general info, missing, duplicate, then check the correctness of variables and data. After that we had data wrangling, then analyze the target variable, numerical and categorical variables 
-
 ### 3- <span style="color: red; "> **Feature Engineering** </span>
- we split the data into features and target, identify categorical and numerical columns, encode the target variable and apply Onehotencoder to catgorical and standardscaler to numerical variables 
-
 ### 4- <span style="color: red; "> **train/test split and handling imbalanced dataset** </span>
-At first we have train/test split, then apply SMOTE method for imbalanced dataset
-
 ### 5- <span style="color: red; "> **Machine learning models before hyperparameter tuning** </span> 
-we have 8 models: decision trees, KNN, SVM, Logistic Regression, Random Forest, AdaBoost, XGBoost and MLP (multi layer perceptron)
-
-We evaluate models with different criteria (accuracy, recall, precision, f1, and time) and find that best model is Random Forest ,followed by XGBoost, and Decision Trees. 
-
-We find that f1, recall, precision, and roc_auc are needed to be improved. 
-
 ### 6- <span style="color: red; "> **Models with hyperparameter tuning (best parameters)** </span>
-We define different parameters for our classifiers (8 classifiers) 
-and using gridsearch we find the best parameters for each following classifiers:
-    
-- 1- decision trees 
-- 2- KNN
-- 3- SVM
-- 4- Logistic Regression 
-- 5- Random Forest 
-- 6- AdaBoost 
-- 7- XGBoost 
-- 8- MLP
-  
-### 7- <span style="color: red; "> **Comparison of tuned models** </span> 
-we define pipeline for best parameters for each model, fit the models and make prediction, extract Accuracy and Classification report, plot ROC curve, find Confusion Matrix and finally using SHAP and feature importance we find most important factors affecting the target variable. 
-
+### 7- <span style="color: red; "> **Comparison of tuned models and best model** </span> 
 - Using confusion matrix, ROC curve, recall, precision and f1, we find that among models with best parameters, **XGBoost** classifier is the best and **KNN** is the second best model. 
   
 - From SHAP and feature importance we find that three factors are very important and have the highest impact on risk of default. They are: 
