@@ -1015,7 +1015,7 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 # <span style="color: red; ">  **8- Conclusion** </span> 
 ## <span style="color: red; "> **8- 1- Steps of the project (what we have done?)** </span>
 ### 1- <span style="color: red; "> **Business understanding** </span>
-#### 2- <span style="color: red; "> **Data understanding** </span> 
+### 2- <span style="color: red; "> **Data understanding** </span> 
 ### 3- <span style="color: red; "> **Feature Engineering** </span>
 ### 4- <span style="color: red; "> **train/test split and handling imbalanced dataset** </span>
 ### 5- <span style="color: red; "> **Machine learning models before hyperparameter tuning** </span> 
