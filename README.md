@@ -1014,13 +1014,13 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 
 # <span style="color: red; ">  **8- Conclusion** </span> 
 ## <span style="color: red; "> **8- 1- Steps of the project (what we have done?)** </span>
-### 1- <span style="color: red; "> **Business understanding** </span>
-### 2- <span style="color: red; "> **Data understanding** </span> 
-### 3- <span style="color: red; "> **Feature Engineering** </span>
-### 4- <span style="color: red; "> **train/test split and handling imbalanced dataset** </span>
-### 5- <span style="color: red; "> **Machine learning models before hyperparameter tuning** </span> 
-### 6- <span style="color: red; "> **Models with hyperparameter tuning (best parameters)** </span>
-### 7- <span style="color: red; "> **Comparison of tuned models and best model** </span> 
+- 1- <span style="color: red; "> **Business understanding** </span>
+- 2- <span style="color: red; "> **Data understanding** </span> 
+- 3- <span style="color: red; "> **Feature Engineering** </span>
+- 4- <span style="color: red; "> **train/test split and handling imbalanced dataset** </span>
+- 5- <span style="color: red; "> **Machine learning models before hyperparameter tuning** </span> 
+- 6- <span style="color: red; "> **Models with hyperparameter tuning (best parameters)** </span>
+- 7- <span style="color: red; "> **Comparison of tuned models and best model** </span> 
 - Using confusion matrix, ROC curve, recall, precision, f1 and accuracy, we find that among models with best parameters, **XGBoost** classifier is the best and **KNN** is the second best model. 
   
 - From SHAP and feature importance we find that three factors are very important and have the highest impact on risk of default. They are: 
