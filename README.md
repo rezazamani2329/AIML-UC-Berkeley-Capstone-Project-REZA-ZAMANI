@@ -227,14 +227,7 @@ From April to September of 2005, we tracked historical monthly payment records. 
 7.    <span style="color: red; "> Default ratio is exceptionally high when balance limit is 550000 and 600000 dollars </span>
 </div>
 
-![Limit_ball_distribution](Images/Limit_ball_distribution.PNG)
-
-![BALANCE_TARGET](Images/BALANCE_TARGET.PNG)
-
 ![Limit_ball_risk_of_default_0_1000k](Images/Limit_ball_risk_of_default_0_1000k.PNG)
-
-![Limit_ball_risk_of_default_0_100k](Images/Limit_ball_risk_of_default_0_100k.PNG)
-
 
 
 ###  *2-7-2- Visualization of "age" feature* 
@@ -245,17 +238,14 @@ From April to September of 2005, we tracked historical monthly payment records. 
 3. <span style="color: red; "> Age group 31-40 has the lowest probability for default (20%)   </span>
 4. <span style="color: red; "> Age group 71-80 has the highest probability for default (more than 33%)   </span>
 5. <span style="color: red; "> Age group 21-30 has the second lowest probability for default   </span>
-#### 6. <span style="color: red; "> important point: probability of default 31-40 < 21-30 < 41-50 < 51-60< 61-70 < 71-79 </span>
+#### 6. <span style="color: red; "> important point: probability of default fo age groups:  31-40 < 21-30 < 41-50 < 51-60< 61-70 < 71-79 </span>
 
-![AGE_DEFAULT](Images/AGE_DEFAULT.PNG)
-
-AGE_DEFAULT
 ###  *2-7-3- Relationship between age and other factors* 
  
 #### <span style="color: blue; "> Points for relationship between "age" and "balance limit" </span> 
 1. <span style="color: red; "> age between 20-30 has the minimum balance   </span>  
 2.   <span style="color: red; "> age between 70-79 has the maximum balance 
-3. <span style="color: red; "> at first the balance increases as age goes up, but then decrease, and in retirement it increase again   </span>
+3. <span style="color: red; "> at first the balance increases as age goes up, but then decreases, and in retirement it increases again   </span>
 
 ![AGE_BILL](Images/AGE_BILL.PNG)
 
@@ -277,11 +267,10 @@ AGE_DEFAULT
 2. <span style="color: red; "> For all six months, Interquartile (75) is 2 months delay in payment </span>  
 3. <span style="color: red; "> For all six months, more than 5 months delay in payment is very low </span>
 
-![payment_history_kde2](Images/payment_history_kde2.PNG)
-![payment_history_kde1](Images/payment_history_kde1.PNG)
 
 ### 2-7-4-1- Probability of default with attention to history of payments 
-##### We focus here only on first and last months, as they are more important than others in affecting target variable 
+
+##### We focus here only on first month (September), as it is very important factor affecting risk of default 
 #### <span style="color: green; ">Points for history of payment on September (last month):
 
 - 1-	Default probability with full payment is 16%
@@ -293,20 +282,6 @@ AGE_DEFAULT
 - 7-	Default probability with more than 8 months is 13% 
 - 8-	Generally, we see that first month delay is threshold point, as after that we see remarkable increase in default in second months. 
 - 9-	Generally, fully payment has the minimum probability of default
-  
-#### <span style="color: green; ">Points for history of payment on April (first month):
-- 1-	Default probability with full payment is 19%
-- 2-	Default probability with having only part of payment is 0%
-- 3-	Default probability with one month delay is 51%
-- 4-	Default probability with three to seven months delay are more than 60% and even in seven month delay it reaches to more than 80%
-- 5-	Default probability with eight months delay is 100%
-- 6-	Generally, probability of default is increasing from full payment to eight months delay. 
-- 7-	Generally, we see that there is a sharp increase in the probability of default in second months delay, which shows month one and two are critical for default or not.
-   
-![DEFUALT_SEPTEMBER](Images/DEFUALT_SEPTEMBER.PNG)
-
-![DEFUALT_APR](Images/DEFUALT_APR.PNG)
-
 
 ### *2-7-4-2- pairplot to have big picture*   
 
@@ -316,29 +291,14 @@ AGE_DEFAULT
 #### <span style="color: red; "> *2-7-5-2- Relationship between Bill amount and target variable* </span>  
 
 #### <span style="color: red; ">2-7-5-3- Probability of default with attention to Bill amount </span> 
-- We have information of bill amount for six month (from April to September). Here we give probability of default only for two of them, September and April, which are more important with attention to SHAP and feature importance.
-
-![Bill_amnt_default_september_0_1000k](Images/Bill_amnt_default_september_0_1000k.PNG) 
-
-
-![Bill_amnt_default_september_0_100k](Images/Bill_amnt_default_september_0_100k.PNG)  
-
-
-![Bill_amnt_default_april_0_1000k](Images/Bill_amnt_default_april_0_1000k.PNG)  
-
-
-![Bill_amnt_default_april_0_100k](Images/Bill_amnt_default_april_0_100k.PNG)  
-
  
 ####  *2-7-5-4- pairplot of Bill Amount to have big picture and relationship between them* 
  
 1. <span style="color: red; "> main part of bill amount (Inter Quantile Range (IQR) for all six months is between 35k to 70k </span>  
 2.   <span style="color: red; ">as the number of previous months increases, the amount of 25%, 50% and 75% decreases 
 3.   <span style="color: red; ">From pariplot, it seems some of them have correlation
-![pariplot_billamount](Images/pariplot_billamount.PNG)
 
-![BILL_AMNT_DESCRIBE](Images/BILL_AMNT_DESCRIBE.PNG) 
- 
+
 ###  *2-7-6- Visualization of pay amount (Previous payment)*  
  <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
  
@@ -347,24 +307,8 @@ AGE_DEFAULT
 3.   <span style="color: red; "> mean of previous payment for six months does not have clear trend, but mean of previous payment is among 4800 to 5700 
 
 #### *2-7-6-1- Distribution of pervious payment (pay amount)* 
-![previous_payment_KDE2](Images/previous_payment_KDE2.PNG)
-![previous_payment_KDE1](Images/previous_payment_KDE1.PNG)
 
-![PAY_AMNT_DESCRIBE](Images/PAY_AMNT_DESCRIBE.PNG)
-
-## <span style="color: red; ">2-7-6-2- Probability of default with attention to pay amount </span>  
-
-- We have information of bill amount for six month (from April to September). Here we give probability of default only for two of them, September and April, which are more important with attention to SHAP and feature importance.
-
-![pay_amnt_default_september_0_1000k](Images/pay_amnt_default_september_0_1000k.PNG)
-
-![pay_amnt_default_september_0_100k](Images/pay_amnt_default_september_0_100k.PNG)
-
-![pay_amnt_default_april_0_400k](Images/pay_amnt_default_april_0_400k.PNG)
-
-![pay_amnt_default_april_0_100k](Images/pay_amnt_default_april_0_100k.PNG)
-
-
+#### <span style="color: red; ">2-7-6-2- Probability of default with attention to pay amount </span>  
   
 #### *2-7-6-3- pariplot of previous payment to have big picture and relationship between them* 
 1. <span style="color: red; "> main part of bill amount (Inter Quantile Range (IQR) for all six months is between 4000 to 5000 dollars</span>  
@@ -377,9 +321,6 @@ AGE_DEFAULT
  
 1. <span style="color: red; "> When Previous payment is low but Monthly Bill is high there is high possibility of default the payment. </span>  
 2. <span style="color: red; "> approximately the distribution of default or payment for all six months are the same, when paying attention to the both  Previous payment and bill amount </span>  
-
-![pay_and_bill2](Images/pay_and_bill2.PNG)
-![pay_and_bill1](Images/pay_and_bill1.PNG)
 
 
 ###  *2-7-7- Correlation between  numerical features* 
@@ -396,25 +337,18 @@ AGE_DEFAULT
 2.   <span style="color: red; "> around 24% of male has default, and around 21% of female has default
 3.    <span style="color: green; "> Male has higher rate of default than Female  </span>  
 
-![GENDER_TARGET](Images/GENDER_TARGET.PNG)
-
 
 ###  *2-8-2- Visualization of "education" feature* 
 1. <span style="color: red; "> 45% of customers have university degree, after that 35% have graduate school.   </span>  
 2.   <span style="color: red; "> It seems people with high school has higher level of default
 
-![EDUCATION](Images/EDUCATION.PNG)
  
 ### *2-8-3- Visualization of "Marriage" feature*  
 1. <span style="color: red; "> 53% of customers are single and 45% are married. </span>  
 2.   <span style="color: red; "> it seems Married people have higher level of default than single
 
-![MARRIAGE](Images/MARRIAGE.PNG)
-
 
 ### *2-8-4- Heatmap for categorical variables* 
-
-![Heatmap-categorical_variables](Images/Heatmap-categorical_variables.PNG)
 
 ### *2-8-5- Probability of default with attention to categorical variables*
  
@@ -432,11 +366,6 @@ AGE_DEFAULT
 5.  <span style="color: red; "> "Married" group has the maximum limit balance </span>  
 6. <span style="color: red; "> "Others" group has the minimum limit balance </span>
 
-![EDCUATION_BILL_AMNT](Images/EDCUATION_BILL_AMNT.PNG)
-
-![GENDER_BILL_AMNT](Images/GENDER_BILL_AMNT.PNG)
-
-![MARRIAGE_BILL_AMNT](Images/MARRIAGE_BILL_AMNT.PNG)
   
 # **3- Engineering Features** 
 - 1- check the dataset info to be sure have all data or do not have extra 
@@ -577,121 +506,11 @@ Evaluation:
 
 - At first we define pipeline to find best parameters for each model  </span> 
 - Then fit the models and make prediction
-- After that we have evaluation with different criteria. Here is the results  </span> 
+- After that we have evaluation with different criteria. Here is the results for all calssifiers together and also ROC curve   </span> 
 
 ![Classifiers_Comparison](Images/Classifiers_Comparison.PNG)
 
-![EVALUATION_TUNED_MODELS](Images/EVALUATION_TUNED_MODELS.PNG)
-
-
-*******************************************************
-KNN Accuracy: 0.86
-
-KNN Classification Report:
-               precision    recall  f1-score   support
-
-           0       0.93      0.77      0.84      4613
-           1       0.81      0.94      0.87      4733
-
-    accuracy                           0.86      9346
-    macro avg      0.87      0.86      0.86      9346
-    weighted avg   0.87      0.86      0.86      9346
-
-*******************************************************
-Decision Tree Accuracy: 0.74
-
-Decision Tree Classification Report:
-               precision    recall  f1-score   support
-
-           0       0.72      0.78      0.75      4613
-           1       0.77      0.70      0.73      4733
-
-    accuracy                           0.74      9346
-    macro avg       0.74      0.74     0.74      9346
-    weighted avg    0.74      0.74     0.74      9346
-
-*******************************************************
-SVM Accuracy: 0.71
-
-SVM Classification Report:
-               precision    recall  f1-score   support
-
-           0       0.67      0.82      0.74      4613
-           1       0.78      0.61      0.68      4733
-
-    accuracy                           0.71      9346
-    macro avg      0.72      0.71      0.71      9346
-    weighted avg   0.72      0.71      0.71      9346
-
-*******************************************************
-Logistic Regression Accuracy: 0.63
-
-Logistic Regression Classification Report:
-               precision    recall  f1-score   support
-
-           0       0.65      0.52      0.58      4613
-           1       0.61      0.73      0.67      4733
-
-    accuracy                           0.63      9346
-    macro avg      0.63      0.63      0.62      9346
-    weighted avg   0.63      0.63      0.62      9346
-
-*******************************************************
-Random Forest Accuracy: 0.79
-
-Random Forest Classification Report:
-               precision    recall  f1-score   support
-
-           0       0.76      0.86      0.81      4613
-           1       0.84      0.73      0.78      4733
-
-    accuracy                           0.79      9346
-    macro avg      0.80      0.80      0.79      9346
-    weighted avg   0.80      0.79      0.79      9346
-*******************************************************
-AdaBoost Accuracy: 0.75
-
-AdaBoost Classification Report:
-               precision    recall  f1-score   support
-
-           0       0.71      0.83      0.77      4613
-           1       0.80      0.66      0.73      4733
-
-    accuracy                           0.75      9346
-    macro avg      0.76      0.75      0.75      9346
-    weighted avg   0.76      0.75      0.75      9346
-*******************************************************
-XGBoost Accuracy: 0.86
-
-XGBoost Classification Report:
-               precision    recall  f1-score   support
-
-           0       0.83      0.90      0.86      4613
-           1       0.89      0.82      0.85      4733
-
-    accuracy                           0.86      9346
-    macro avg      0.86      0.86      0.86      9346
-    weighted avg   0.86      0.86      0.86      9346
-
-*******************************************************
-MLP Accuracy: 0.70
-
-MLP Classification Report:
-               precision    recall  f1-score   support
-
-           0       0.67      0.78      0.72      4613
-           1       0.75      0.62      0.68      4733
-
-    accuracy                           0.70      9346
-    macro avg      0.71      0.70      0.70      9346
-    weighted avg   0.71      0.70      0.70      9346
-*******************************************************
-- We also plotted ROC curve** </span> 
 ![ROC_AUC](Images/ROC_AUC.PNG)
-
-- Here is Confusion Matrix** </span> 
-![confusion_matix1](Images/Confusion_matrix1.PNG)
-![confusion matix2](Images/Confusion_matrix2.PNG)
 
 ### <span style="color: red; ">  **-Best Model after tuning the hyperparameters** </span> 
 
@@ -1014,14 +833,14 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 
 # <span style="color: red; ">  **8- Conclusion** </span> 
 ## <span style="color: red; "> **8- 1- Steps of the project (what we have done?)** </span>
-- 1- <span style="color: red; "> **Business understanding** </span>
-- 2- <span style="color: red; "> **Data understanding** </span> 
-- 3- <span style="color: red; "> **Feature Engineering** </span>
-- 4- <span style="color: red; "> **train/test split and handling imbalanced dataset** </span>
-- 5- <span style="color: red; "> **Machine learning models before hyperparameter tuning** </span> 
-- 6- <span style="color: red; "> **Models with hyperparameter tuning (best parameters)** </span>
-- 7- <span style="color: red; "> **Comparison of tuned models and best model** </span> 
-- Using confusion matrix, ROC curve, recall, precision, f1 and accuracy, we find that among models with best parameters, **XGBoost** classifier is the best and **KNN** is the second best model. 
+### 1- <span style="color: red; "> **Business understanding** </span>
+#### 2- <span style="color: red; "> **Data understanding** </span> 
+### 3- <span style="color: red; "> **Feature Engineering** </span>
+### 4- <span style="color: red; "> **train/test split and handling imbalanced dataset** </span>
+### 5- <span style="color: red; "> **Machine learning models before hyperparameter tuning** </span> 
+### 6- <span style="color: red; "> **Models with hyperparameter tuning (best parameters)** </span>
+### 7- <span style="color: red; "> **Comparison of tuned models and best model** </span> 
+- Using confusion matrix, ROC curve, recall, precision and f1, we find that among models with best parameters, **XGBoost** classifier is the best and **KNN** is the second best model. 
   
 - From SHAP and feature importance we find that three factors are very important and have the highest impact on risk of default. They are: 
 - LIM_SEP
