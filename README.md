@@ -566,7 +566,7 @@ Evaluation:
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
 
 # <span style="color: red; ">  **7-8- Main results from SHAP and their interpretations** </span> 
-# <span style="color: red; ">  **7-8-1-Main results ** </span> 
+# <span style="color: red; ">  **7-8-1-Main results** </span> 
 
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
 
