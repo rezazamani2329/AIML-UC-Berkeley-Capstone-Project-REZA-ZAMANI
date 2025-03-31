@@ -566,7 +566,7 @@ Evaluation:
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
 
 # <span style="color: red; ">  **7-8- Main results from SHAP and their interpretations** </span> 
-### <span style="color: red; ">  **7-8-1-Main results from SHAP and feature importance** </span> 
+# <span style="color: red; ">  **7-8-1-Main results from SHAP and feature importance** </span> 
 
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
 
@@ -590,7 +590,7 @@ Evaluation:
 - 10- **EDUCATION**: This feature has low impact on risk of default (target variable). Among different groups, university degree and graduate school have higher ranking than others. 
 </div>
 
-## <span style="color: red; ">  **7-8-2- Interpretation of results**
+# <span style="color: red; ">  **7-8-2- Interpretation of results**
 
 For interpretation, we use SHAP, feature importance, and data understanding </span> 
 
@@ -611,7 +611,6 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 - **`    `8`                      `8 moths delay`                            `58%**                             
 - **`    `9`                      `more than 8 moths delay`                  `13%**                              
 
-#### **Average risk of default is 48%** in PAY_SEP feature 
 #### **we can categorize them with attention to the mean risk, form low risk to very high risk** 
 
 - <span style="color: GREEN; ">**`           `Condition`              `Risk level (from low to very high)`            `Risk level (from 1 to 6)**
