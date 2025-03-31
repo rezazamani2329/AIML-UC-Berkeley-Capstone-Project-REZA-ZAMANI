@@ -352,7 +352,7 @@ From April to September of 2005, we tracked historical monthly payment records. 
 ### *2-8-5- Probability of default with attention to categorical variables*
  
 1. <span style="color: red; "> people with high school degree have the highest default (25%), followed by university degree (23%), and Graduate School (19%) and others (7%)  </span>  
-2.   <span style="color: red; "> single people (22%) has the lowest level default, followed by married (23%) and others (24%)
+2.   <span style="color: red; "> single (22%) has the lowest level default, followed by married (23%) and others (24%)
 3.   <span style="color: red; "> default of male (24%) is higher than female (21%)
 
 ![DEFAULT_SEX_EDUCATION_MARRIAGE](Images/DEFAULT_SEX_EDUCATION_MARRIAGE.PNG)
