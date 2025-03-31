@@ -846,7 +846,7 @@ For interpretation, we use SHAP, feature importance, and data understanding </sp
 - BILL_AMT
 - AGE
   
-### <span style="color: red; "> **8-2- Deployment** </span>
+# <span style="color: red; "> **8-2- Deployment** </span>
 Now that we have settled on our models and findings, it is time to deliver the information to the client.  I am organizing my work as a basic report that details my primary findings.  Keep in mind that my audience are financial companies interested in fine-tuning their strategy in debt market and are sensitive to the default of payment by customers.
 
 
