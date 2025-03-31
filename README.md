@@ -270,7 +270,7 @@ From April to September of 2005, we tracked historical monthly payment records. 
 ### 2-7-4-1- Probability of default with attention to history of payments 
 
 ##### We focus here only on September, as it is very important factor affecting risk of default 
-#### <span style="color: green; ">Points for history of payment on September:
+#### <span style="color: green; ">Points for history of payment in September:
 
 - 1-	Default probability with full payment is 16%
 - 2-	Default probability for people who pay only part of debpt is 13%
