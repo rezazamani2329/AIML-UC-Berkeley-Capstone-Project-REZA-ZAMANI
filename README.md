@@ -247,7 +247,6 @@ From April to September of 2005, we tracked historical monthly payment records. 
 2.   <span style="color: red; "> age between 70-79 has the maximum balance 
 3. <span style="color: red; "> at first the balance increases as age goes up, but then decreases, and in retirement it increases again   </span>
 
-![AGE_BILL](Images/AGE_BILL.PNG)
 
    
 ### *2-7-4- Visualization of history of payments* 
