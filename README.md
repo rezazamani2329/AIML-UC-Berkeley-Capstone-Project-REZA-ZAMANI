@@ -571,7 +571,7 @@ Evaluation:
 <div style="background-color: LightPink; padding: 10px; border-radius: 5px;"> 
 
 
-- <span style="color: red; "> **1-3-Top Three features affecting the target (risk of default):** <span style="color: GREEN; ">
+### **1-3-Top Three features affecting the target (risk of default):** <span style="color: GREEN; ">
 - <span style="color: red; "> **AGE**, 
 - <span style="color: red; "> **PAY_SEPT**,
 - <span style="color: red; "> **LIMIT_BAL** 
